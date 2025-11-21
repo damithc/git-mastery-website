@@ -2,7 +2,7 @@
 title: "Book - Software Engineering for Self-Directed Learners"
 </frontmatter>
 
-<link rel="stylesheet" href="{{baseUrl}}/css/textbook.css">
+<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
 
 <div class="website-content" id="all">
 

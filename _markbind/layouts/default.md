@@ -1,5 +1,5 @@
 <head-bottom>
-  <link rel="stylesheet" href="{{baseUrl}}/css/textbook.css">
+  <link rel="stylesheet" href="{{baseUrl}}/css/main.css">
 </head-bottom>
 
 <header sticky>

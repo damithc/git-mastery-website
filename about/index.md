@@ -3,7 +3,7 @@ title: "About: Acknowledgements"
 pageNav: 3
 </frontmatter>
 
-<link rel="stylesheet" href="{{baseUrl}}/css/textbook.css">
+<link rel="stylesheet" href="{{baseUrl}}/css/main.css">
 
 <div class="website-content">
 <div id="body">
