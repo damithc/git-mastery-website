@@ -13,7 +13,7 @@ title: "Book - Software Engineering for Self-Directed Learners"
 
 ### About this book
 
-* [About](about/acknowledgements.html)
+* [About](about/index.html)
 
 ### Project management
 

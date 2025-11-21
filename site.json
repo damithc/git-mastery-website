@@ -9,35 +9,18 @@
       "glob": "**/index.md"
     },
     {
-      "glob": "**/acknowledgements.md"
-    },
-    {
-      "glob": "**/usage.md"
-    },
-    {
-      "glob": "**/print.md"
+      "glob": "**/index.md"
     },
     {
       "glob": "**/tours.md"
-    },
-    {
-      "glob": "**/definitions.md"
-    },
-    {
-      "glob": "**/outcomes.md"
-    },
-    {
-      "glob": "**/references.md"
-    },
-    {
-      "glob": "**/combined/exercises.md"
     }
   ],
   "pagesExclude": ["**/*-fragment.md"],
   "ignore": [
+    "diagrams",
     "_site/*",
     "site.json",
-    "gitAndGithub/*/text.md",
+    "lessons/*/text.md",
     "*.md",
     ".git/*"
   ],
@@ -48,11 +31,11 @@
     "enabled": true
   },
   "enableSearch": true,
-  "titlePrefix": "SEforSDL",
+  "titlePrefix": "Git-Mastery",
   "plugins": ["mermaid", "filterTags"],
   "pluginsContext": {
     "filterTags" : {
-      "tags": ["-git-mastery"]
+      "tags": []
     },
     "mermaid": {
       "address": "https://unpkg.com/mermaid@11.7.0/dist/mermaid.esm.min.mjs"
