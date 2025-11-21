@@ -9,7 +9,9 @@
 <div id="flex-body">
 <nav id="site-nav" class="fixed-header-padding">
 <div class="nav-component slim-scroll">
-
+<site-nav>
+* [Tour 1: Recording the History of a Folder]({{baseUrl}}/lessons/trail/recordingFolderHistory/index.html)
+</site-nav>
 </div>
 </nav>
 <div id="content-wrapper" class="fixed-header-padding">

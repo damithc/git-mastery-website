@@ -1,10 +1,3 @@
-<variable id="url_java_coding_standard">https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html</variable>
-
-
-<variable id="outcomes">
-<span class="badge bg-light text-dark"><md>%%<include src="text.md#outcomes" inline />%%</md></span><p/>
-</variable>
-
 <variable id="bullet_checkbox">{ icon="far-square" }</variable>
 <variable id="bullet_checkbox_red">{ icon="far-square" i-class="text-danger" }</variable>
 <variable id="bullet_checkbox_selected">{ icon="fas-square-check" }</variable>

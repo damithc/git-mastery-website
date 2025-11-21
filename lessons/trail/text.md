@@ -4,11 +4,11 @@
 
 <div id="body">
 
-# :fas-route: ++Git Learning Trail++{.text-success}
+# :fas-route: ++Git Learning Tours++{.text-success}
 
 <div id="trail-intro">
 
-We've packaged our Git (and GitHub) lessons as 'Learning Trail' which is divided into several 'tours'. Each tour consists of a series of lessons and covers the Git knowledge required for a specific usage.
+We've packaged our Git (and GitHub) lessons as a series of 'tours'. Each tour consists of a series of lessons and covers the Git knowledge required for a specific usage.
 
 {% macro tour(desc) %}<span style="border-top-left-radius: 5px; border-top-right-radius: 5px; margin-left: -10px;" class="bg-success text-light p-1"><md>:fas-map-marker-alt: {{ desc }}</md></span>{% endmacro %}
 
@@ -16,7 +16,7 @@ We've packaged our Git (and GitHub) lessons as 'Learning Trail' which is divided
 
 {% macro usage(desc) %}<span class="badge bg-warning text-dark rounded-pill">Usage: {{ desc }}</span>{% endmacro %}
 
-<span class="badge bg-success rounded-pill"><md>++Git Learning Tour++</md></span><br>
+<span class="badge bg-success rounded-pill"><md>++Git Tours++</md></span><br>
 <div style="margin-top: -15px;" class="indented-level1 pt-0">
 <tree>
 |
