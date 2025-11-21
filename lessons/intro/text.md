@@ -28,7 +28,8 @@ Most of these reasons are equally valid, at least in theory, whether you're work
 </box>
 
 <modal large header="Reference » Mercurial: The Definitive Guide" id="modal:rcsWhat-bryanMercurialGuide">
-<include src="../../common/references.md#bryan-mercurial-guide" />
+
+[_**Mercurial: The Definitive Guide**_](http://hgbook.red-bean.com/) by Bryan O'Sullivan retrieved on 2012/07/11
 </modal>
 
 **A {{ show_git_term('revision') }} is the state of a piece of information at a specific point in time, resulting from changes made to it** e.g., if you modify the code and save the file, you have a new _revision_ (or a new _version_) of that file. %%Some seem to use this term interchangeably with _version_ while others seem to distinguish the two -- here, let us treat them as the same, for simplicity.%%<br>
