@@ -2,6 +2,7 @@
 <frontmatter>
 title: "{{ trail.recordingFolderHistory.lessons.stage.title }}"
 
+layout: lessons.md
 </frontmatter>
 
 <include src="unit-inPage-asFlat.md" boilerplate />

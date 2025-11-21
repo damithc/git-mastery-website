@@ -10,7 +10,16 @@
 <nav id="site-nav" class="fixed-header-padding">
 <div class="nav-component slim-scroll">
 <site-nav>
-* [Tour 1: Recording the History of a Folder]({{baseUrl}}/lessons/trail/recordingFolderHistory/index.html)
+{% from "common/macros.njk" import trail with context %}
+
+* [**Lessons Home**]({{baseUrl}}/lessons/index.html)
+{% for tour_id, tour in trail %}
+* {{ tour.title }}
+  * [Tour Home]({{baseUrl}}/lessons/trail/{{ tour.folder }}/index.md)
+  {% for lesson_id, lesson in tour.lessons %}
+  * [{{ lesson.title}}]({{baseUrl}}/{{ lesson.path }}/index.html)
+  {% endfor %}
+{% endfor %}
 </site-nav>
 </div>
 </nav>

@@ -1,6 +1,7 @@
 {% from "common/macros.njk" import trail with context %}
 <frontmatter>
 title: "{{ trail.recordingFolderHistory.title }}"
+layout: lessons.md
 pageNav: 4
 </frontmatter>
 

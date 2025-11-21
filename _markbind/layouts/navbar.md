@@ -1,7 +1,7 @@
 <navbar placement="top" type="dark">
 <a slot="brand" href="https://se-education.org" title="SE-EDU" class="navbar-brand"><md>****Git-Mastery****</md></a>
   <li><a href="{{baseUrl}}/index.html" class="nav-link"><md>**Home**</md></a></li>
-  <li><a href="{{baseUrl}}/lessons/trail/index.html" class="nav-link"><md>**Lessons**</md></a></li>
+  <li><a href="{{baseUrl}}/lessons/index.html" class="nav-link"><md>**Lessons**</md></a></li>
   <li><a href="https://git-mastery.github.io/developers/" class="nav-link"><md>**Dev Docs**</md></a></li>
   <li><a href="{{baseUrl}}/about/index.html" class="nav-link"><md>**About**</md></a></li>
   <li><a href="https://github.com/se-edu/se-book" class="nav-link"><md>:fab-github:</md></a></li>
