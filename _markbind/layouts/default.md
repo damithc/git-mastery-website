@@ -23,7 +23,7 @@
 * **About this book**
   * [About]({{baseUrl}}/about/acknowledgements.html)
 * **Project management**
-  * [Revision control (using Git & GitHub)]({{baseUrl}}/gitAndGithub/trail/tours.html)
+  * [Revision control (using Git & GitHub)]({{baseUrl}}/lessons/trail/tours.html)
 </site-nav>
 </div>
 </nav>
