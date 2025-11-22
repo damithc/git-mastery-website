@@ -10,6 +10,10 @@ pageNav: 3
 
 # About Git-Mastery
 
+<div class="lead">
+
+Git-Mastery is a project based in the [School of Computing, National University of Singapore](https://www.comp.nus.edu.sg).
+</div>
 
 ## License
 
@@ -35,6 +39,7 @@ pageNav: 3
 
 * **Project Mentor:** [Damith C. Rajapakse](https://damithc.github.io)
 * **Project Lead:** [Woo Jiahao](https://github.com/woojiahao)
+* **Contributors:** to be added soon ...
 
 
 </div>

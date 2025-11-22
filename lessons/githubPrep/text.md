@@ -23,7 +23,7 @@ To use GitHub, **you need to sign up for an account, and configure related tools
 
 **Every GitHub user must have a user account**, even if they primarily work within an organisation.
 
-{% call show_prep("Create a GitHub account") %}
+{% call show_prep("Create a GitHub account", "create-github-account") %}
 **Create a personal GitHub account** as described in [GitHub Docs → Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github), if you don't have one yet.
 
 <box type="tip" seamless>
@@ -46,7 +46,7 @@ A {{ show_git_term("Personal Access Token (PAT)") }} is essentially a long, rand
 * **With HTTPS, you connect over the web** and authenticate using your GitHub username and a Personal Access Token.
 * **With SSH, you connect using a cryptographic key pair** you generate on your machine. Once you add your public key to your GitHub account, GitHub recognises your machine and lets you authenticate without typing anything further.
 
-{% call show_prep("Set up authentication with GitHub") %}
+{% call show_prep("Set up authentication with GitHub", "setup-authentication") %}
 
 Set up your computer's GitHub authentication, as described in the se-edu guide [Setting up GitHub Authentication](https://se-education.org/guides/tutorials/githubAuthentication.html).
 
@@ -57,7 +57,7 @@ Set up your computer's GitHub authentication, as described in the se-edu guide [
 
 **GitHub provides a no-reply email** (e.g., `12345678+username@users.noreply.github.com`) that you can use as your Git `user.email` to hide your real email while still associating commits with your GitHub account.
 
-{% call show_prep("[Optional] Configure `user.email` to use the no-reply email from GitHub") %}
+{% call show_prep("[Optional] Configure `user.email` to use the no-reply email from GitHub", "configure-no-reply-email") %}
 
 **If you prefer not to include your real email address in commits,** you can do the following:
 
@@ -79,7 +79,7 @@ Set up your computer's GitHub authentication, as described in the se-edu guide [
 
 **If you are using Git-Mastery exercises (strongly recommended), you need to install and configure GitHub CLI** because it is needed by Git-Mastery exercises involving GitHub.
 
-{% call show_prep("Set up GitHub CLI") %}
+{% call show_prep("Set up GitHub CLI", "setup-github-cli") %}
 
 <tabs>
   <tab header=":fab-windows: Windows">

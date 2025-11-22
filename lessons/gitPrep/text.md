@@ -15,7 +15,7 @@ Before you start learning Git, **you need to install some tools** on your comput
 
 **Git is a free and open source software used for revision control.** To use Git, you need to install Git on your computer.
 
-{% call show_prep("Install Git") %}
+{% call show_prep("Install Git", "install-git") %}
 <tabs>
   <tab header=":fab-windows: Windows">
 
@@ -94,7 +94,7 @@ The output should display the version number.
 
 **Git needs to know _who you are_ to record changes properly.** When you save a snapshot of your work in Git, it records your name and email as the author of that change. This ensures everyone working on the project can see who made which changes. **Accordingly, you should set the config settings `user.name` and `user.email` before you start Git for revision control.**
 
-{% call show_prep("Set `user.name` and `user.email`") %}
+{% call show_prep("Set `user.name` and `user.email`", "set-user") %}
 
 **To set the two config settings**, run the following commands in your terminal window:
 ```bash{.no-line-numbers}
@@ -118,7 +118,7 @@ git config --global user.email
 
 **Mastering the CLI gives you confidence and flexibility, while GUI tools can serve as helpful companions.**
 
-{% call show_prep("[Optional] Install a GUI client") %}
+{% call show_prep("[Optional] Install a GUI client", "install-gui") %}
 **Optionally, you can install a Git GUI client.**
 e.g., Sourcetree ([installation instructions](https://se-education.org/guides/tutorials/sourcetree.html)).
 
@@ -137,7 +137,7 @@ Our Git lessons show how to perform Git operations in Git CLI, and in Sourcetree
 
 **If you are new to Git, we ==strongly recommend that you install and use the Git-Mastery app==.**
 
-{% call show_prep("[Recommended] Install and Configure the Git-Mastery App")  %}
+{% call show_prep("[Recommended] Install and Configure the Git-Mastery App", "install-git-mastery")  %}
 
 **1. Install the Git-Mastery App**
 

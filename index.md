@@ -23,7 +23,6 @@ A free resource **for students and teachers**.<br>
 {% macro heading(icon, text) %}<h4>{{ thumbnail(icon) }} <span class="lead font-weight-bold text-green">{{ text }}</span></h4>{% endmacro %}
 
 
-
 {{ heading(":fas-route:", "Outcome-driven lesson paths") }}
 <div class="indented-level3">
 

@@ -327,10 +327,10 @@
 {%- endmacro %}
 <!-- ============================================================ -->
 
-{% macro show_prep(title) %}
-<div class="non-printable">
+{% macro show_prep(title, div_id) %}
+<div class="non-printable", id="{{ div_id }}">
 
-<panel type="dark" header=":fas-gear: PREPARATION: **{{ title }}**" expanded>
+<panel type="dark" header="###### :fas-gear: PREPARATION: **{{ title }}**" expanded>
 
 {{ caller() }}
 </panel>
@@ -456,7 +456,7 @@ The sandbox will be set up inside the `gitmastery-exercises/{{ identifier }}` fo
 {% set path = (exercise.lesson.path if exercise.lesson else exercise.detour.lesson.path) %}
 {% set file =  baseUrl + "/" + path + "/exercise-" + identifier + ".md" %}
 {% if is_panel %}<panel tags="git-mastery" class="non-printable" type="danger" {{ status }}
-header="{{ icon_exercise }} EXERCISE: `{{ identifier }}`"
+header="###### {{ icon_exercise }} EXERCISE: `{{ identifier }}`"
 popup-url="{{ file | replace(".md", ".html") }}">{% else %}
 # Exercise `{{ identifier }}`
 {% endif %}
