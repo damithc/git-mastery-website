@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import trail, bold_number, callout, hp_number, label, show_commit, show_git_term, show_git_term_tip, show_detour, show_exercise, show_git_tabs, show_git_tabs_from_text, show_hands_on_practical, show_head, show_lesson_intro, show_lesson_link, show_output, show_ref, show_resources, show_sidebar, show_tag, show_transformation_columns, show_under_the_hood with context %}
+{% from "common/macros.njk" import trail, bold_number, callout, exercises, hp_number, label, show_commit, show_git_term, show_git_term_tip, show_detour, show_exercise2, show_git_tabs, show_git_tabs_from_text, show_hands_on_practical, show_head, show_lesson_intro, show_lesson_link, show_output, show_ref, show_resources, show_sidebar, show_tag, show_transformation_columns, show_under_the_hood with context %}
 
  **You can unstage a staged file, which simply removes it from the staging area but keeps the changes in your working directory.** This is useful if you later realise that you don’t actually want to include a staged file in the next commit — perhaps you staged it by mistake, or you want to include that change in a later commit.
 
@@ -46,7 +46,4 @@ To unstage a file, locate the file among the `staged files` section, click the `
 {{ show_git_tabs_from_text(cli, sourcetree) }}
 <!-- ------ end: Git Tabs -------------------------------->
 
-{% call show_exercise('staging-intervention') %}
-In the repo `intervention` given, unstage the following files: `adam.txt`, `josh.txt`, `mary.txt`.
-Keep other files staged.
-{% endcall %} <!-- show_exercise -->
+{{ show_exercise2(exercises.staging_intervention) }}

@@ -140,6 +140,12 @@
   compareBranches: {lesson: trail.branchingLocally.lessons.merge, title: "Comparing Branches"},
   squashMerge: {lesson: trail.branchingLocally.lessons.merge, title: "Doing a Squash Merge"}
 } %}
+
+{% set exercises = {
+  under_control: {lesson: trail.recordingFolderHistory.lessons.init, identifier: "under-control"},
+  stage_fright: {lesson: trail.recordingFolderHistory.lessons.stage, identifier: "stage-fright"},
+  staging_intervention: {detour: detours.unstagingChanges, identifier: "staging-intervention"}
+} %}
 <!-- ============================================================ -->
 
 {% macro button_green(text) %}<span class="btn btn-success ps-1 pe-1 pb-0 pt-0">{{ text }}</span>{% endmacro %}
@@ -429,8 +435,8 @@ The sandbox will be set up inside the `gitmastery-exercises/{{ identifier }}` fo
 {% endmacro %}
 <!-- ============================================================ -->
 
-{% macro show_exercise(identifier, has_download=1, has_verify=1, scenario=0) %}
-<panel tags="git-mastery" class="non-printable" type="danger" header="{{ icon_exercise }} EXERCISE: `{{ identifier }}`">
+{% macro show_exercise(identifier, has_download=1, has_verify=1, scenario=0, is_panel=1) %}
+{% if is_panel %}<panel tags="git-mastery" class="non-printable" type="danger" header="{{ icon_exercise }} EXERCISE: `{{ identifier }}`">{% endif %}
 {% if has_download %}
 **To download** the exercise:
 
@@ -460,7 +466,46 @@ The sandbox will be set up inside the `gitmastery-exercises/{{ identifier }}` fo
 <small>%%**To reset the exercise** and start over, navigate to the `gitmastery-exercises/{{ identifier }}` folder and run the `gitmastery progress reset` command.%%</small>
 {% endif %}
 {{ show_gm_footer() }}
-</panel>
+{% if is_panel %}</panel>{% endif %}
+{% endmacro %}
+<!-- ============================================================ --
+
+{% macro show_exercise2(exercise, has_download=1, has_verify=1, scenario=0, is_panel=1, status="collapsed", show_footer=1) %}
+{% set identifier = exercise.identifier %}
+{% set path = (exercise.lesson.path if exercise.lesson else exercise.detour.lesson.path) %}
+{% if is_panel %}<panel tags="git-mastery" class="non-printable" type="danger" {{ status }}
+header="{{ icon_exercise }} EXERCISE: `{{ identifier }}`"
+popup-url="{{ baseUrl }}/{{ path }}/exercise-{{ identifier }}.html">{% endif %}
+{% if has_download %}
+**To download** the exercise:
+
+* Navigate inside the `gitmastery-exercises` folder.{{ numbers_roman }}
+* Run `gitmastery download {{ identifier }}` command.
+{% else %}
+**#r#No download##** required for this exercise.
+{% endif %}
+---{.dashed .border-danger}
+{% if scenario %}
+
+**Scenario:** {{ scenario }}
+{% endif %}
+**Your task:**{.text-danger}
+<div class="indented-level1">
+<include src="{{ baseUrl }}/{{ path }}/exercise-{{ identifier }}.md#task" />
+
+</div>
+
+---{.dashed .border-danger}
+{% if has_verify %}
+**To verify** your work:
+
+* Navigate to anywhere inside the `gitmastery-exercises/{{ identifier }}` folder %%(or any sub-folder of it)%%. {{ numbers_roman }}
+* Run the `gitmastery verify` command.
+
+<small>%%**To reset the exercise** and start over, navigate to the `gitmastery-exercises/{{ identifier }}` folder and run the `gitmastery progress reset` command.%%</small>
+{% endif %}
+{{ show_gm_footer() if show_footer else ""}}
+{% if is_panel %}</panel>{% endif %}
 {% endmacro %}
 <!-- ============================================================ -->
 

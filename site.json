@@ -9,7 +9,7 @@
       "glob": "**/index.md"
     },
     {
-      "glob": "**/index.md"
+      "glob": "**/exercise-*.md"
     },
     {
       "glob": "**/tours.md"

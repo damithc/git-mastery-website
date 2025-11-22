@@ -1,5 +1,5 @@
 <frontmatter>
-title: "Git Learning Trail"
+title: "Git Lessons"
 layout: lessons.md
 pageNav: 0
 </frontmatter>
