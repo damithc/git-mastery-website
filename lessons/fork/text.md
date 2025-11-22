@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import trail, bold_number, callout, hp_number, label, show_git_term, show_git_term_tip, show_detour, show_exercise, show_git_tabs, show_hands_on_practical, show_lesson_intro, show_output, show_under_the_hood with context %}
+{% from "common/macros.njk" import trail, bold_number, button_green, callout, exercises, hp_number, label, show_git_term, show_git_term_tip, show_detour, show_exercise2, show_git_tabs, show_hands_on_practical, show_lesson_intro, show_output, show_under_the_hood with context %}
 
 <span id="prereqs"></span>
 <span id="outcomes">Can fork a repo on GitHub.</span>
@@ -36,7 +36,5 @@ GitHub does not allow you to fork the same repo more than once to the same desti
 </div>
 
 <div id="extras">
-{% call show_exercise("fork-repo") %}
-Fork the repo https://github.com/git-mastery/gm-shapes to your GitHub account, while retaining the original repo name `gm-shapes`.
-{% endcall %}
+{{ show_exercise2(exercises.fork_repo) }}
 </div>

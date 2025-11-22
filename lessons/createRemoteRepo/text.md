@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import trail, bold_number, button_green, callout, hp_number, label, show_git_term, show_git_term_tip, show_detour, show_exercise, show_git_tabs, show_hands_on_practical, show_lesson_intro, show_output, show_under_the_hood with context %}
+{% from "common/macros.njk" import trail, bold_number, button_green, callout, exercises, hp_number, label, show_git_term, show_git_term_tip, show_detour, show_exercise2, show_git_tabs, show_hands_on_practical, show_lesson_intro, show_output, show_under_the_hood with context %}
 
 <span id="prereqs"></span>
 
@@ -36,13 +36,5 @@ If you enable any of the three `Add _____` options shown above, GitHub will not 
 </div>
 
 <div id="extras">
-{% call show_exercise("remote-control", has_verify=0) %}
-1. As per the usual practice, `cd` into the `remote-control` folder.
-1. Run `gitmastery verify` command.<br>
-1. Take note of the repo name provided by Git-Mastery app (in its response).
-1. Create a new public GitHub repository using the repo name given.
-1. Provide the URL of that remote (without the `.git` at the end) when prompted<br>
- e.g., `https://github.com/johndoe/gitmastery-johndoe-remote-control`
-
-{% endcall %}
+{{ show_exercise2(exercises.remote_control, has_verify=0) }}
 </div>

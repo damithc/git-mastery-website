@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import trail, bold_number, callout, hp_number, label, show_git_term, show_git_term_tip, show_detour, show_detour_preview, show_exercise, show_folder_contents, show_git_tabs, show_hands_on_practical, show_lesson_intro, show_output, show_under_the_hood with context %}
+{% from "common/macros.njk" import trail, bold_number, callout, exercises, hp_number, label, show_git_term, show_git_term_tip, show_detour, show_detour_preview, show_exercise2, show_folder_contents, show_git_tabs, show_hands_on_practical, show_lesson_intro, show_output, show_under_the_hood with context %}
 
 <span id="outcomes">{{ icon_outcome }} can commit using git</span>
 
@@ -30,14 +30,7 @@ Assuming you have previously staged changes to the `fruits.txt`, go ahead and cr
 </div>
 
 <div id="extras">
-{% call show_exercise("grocery-shopping") %}
-
-In the `shopping-list` repo given, there is a `shopping-list.txt`.
-
-1. Edit it to remove at least one item from the shopping list and add at least one new item to the shopping list.
-1. Stage the change and commit it.
-
-{% endcall %}
+{{ show_exercise2(exercises.grocery_shopping) }}
 {{ show_detour('stagingFileDeletions') }}
 {{ show_detour_preview('updateLastCommit') }}
 {{ show_detour_preview('resetUncommitedChanges') }}

@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import trail, bold_number, callout, hp_number, label, show_commit, show_folder_columns, show_git_term, show_git_term_tip, show_detour, show_exercise, show_git_tabs, show_git_tabs_from_text, show_hands_on_practical, show_head, show_lesson_intro, show_lesson_link, show_output, show_protip, show_ref, show_resources, show_sidebar, show_tag, show_transformation_columns, show_under_the_hood with context %}
+{% from "common/macros.njk" import trail, bold_number, callout, exercises, hp_number, label, show_commit, show_folder_columns, show_git_term, show_git_term_tip, show_detour, show_exercise2, show_git_tabs, show_git_tabs_from_text, show_hands_on_practical, show_head, show_lesson_intro, show_lesson_link, show_output, show_protip, show_ref, show_resources, show_sidebar, show_tag, show_transformation_columns, show_under_the_hood with context %}
 
 <span id="prereqs"></span>
 <span id="outcomes">Can rename a branch in a local repository.</span>
@@ -131,36 +131,5 @@ Although forward-slash (`/`) in the prefix doesn't mean folders, some tools trea
 
 </div>
 <div id="extras">
-{% set scenario %}
-In the `rename-this` repo, you have been working on the login feature for your application on the branch `login`. On second thoughts, you now wish you had named it `feature/login`, to indicate the category of work done in the branch.
-<mermaid>
-gitGraph BT:
-    commit id: "m1"
-    commit id: "m2"
-    branch login
-    commit id: "b1"
-    checkout main
-    commit id: "[HEAD → main] m3"
-    checkout login
-    commit id: "[login] b2"
-</mermaid>
-{% endset %}
-{% call show_exercise("branch-rename", scenario=scenario)  %}
-
-In the `rename-this` repo, rename the `login` branch to `feature/login`.
-
-Expected result:
-<mermaid>
-gitGraph BT:
-    commit id: "m1"
-    commit id: "m2"
-    branch feature/login
-    commit id: "b1"
-    checkout main
-    commit id: "[HEAD → main] m3"
-    checkout feature/login
-    commit id: "[feature/login] b2"
-</mermaid>
-
-{% endcall %}
+{{ show_exercise2(exercises.branch_rename, has_scenario=1) }}
 </div>

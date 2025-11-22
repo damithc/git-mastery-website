@@ -144,7 +144,20 @@
 {% set exercises = {
   under_control: {lesson: trail.recordingFolderHistory.lessons.init, identifier: "under-control"},
   stage_fright: {lesson: trail.recordingFolderHistory.lessons.stage, identifier: "stage-fright"},
-  staging_intervention: {detour: detours.unstagingChanges, identifier: "staging-intervention"}
+  staging_intervention: {detour: detours.unstagingChanges, identifier: "staging-intervention"},
+  grocery_shopping: {lesson: trail.recordingFolderHistory.lessons.commit, identifier: "grocery-shopping"},
+  remote_control: {lesson: trail.backingUpOnCloud.lessons.createRemoteRepo, identifier: "remote-control"},
+  link_me: {lesson: trail.backingUpOnCloud.lessons.setRemote, identifier: "link-me"},
+  push_over: {lesson: trail.backingUpOnCloud.lessons.push, identifier: "push-over"},
+  ignoring_something: {lesson: trail.backingUpOnCloud.lessons.ignore, identifier: "ignoring-something"},
+  fork_repo: {lesson: trail.workingWithRemotes.lessons.fork, identifier: "fork-repo"},
+  clone_repo: {lesson: trail.workingWithRemotes.lessons.clone, identifier: "clone-repo"},
+  fetch_and_pull: {lesson: trail.workingWithRemotes.lessons.pull, identifier: "fetch-and-pull"},
+  side_track: {lesson: trail.branchingLocally.lessons.branch, identifier: "side-track"},
+  branch_bender: {lesson: trail.branchingLocally.lessons.merge, identifier: "branch-bender"},
+  conflict_mediator: {lesson: trail.branchingLocally.lessons.mergeConflicts, identifier: "conflict-mediator"},
+  branch_rename: {lesson: trail.branchingLocally.lessons.branchRename, identifier: "branch-rename"},
+  branch_delete: {lesson: trail.branchingLocally.lessons.branchDelete, identifier: "branch-delete"}
 } %}
 <!-- ============================================================ -->
 
@@ -470,12 +483,15 @@ The sandbox will be set up inside the `gitmastery-exercises/{{ identifier }}` fo
 {% endmacro %}
 <!-- ============================================================ --
 
-{% macro show_exercise2(exercise, has_download=1, has_verify=1, scenario=0, is_panel=1, status="collapsed", show_footer=1) %}
+{% macro show_exercise2(exercise, has_download=1, has_verify=1, has_scenario=0, is_panel=1, status="collapsed", show_footer=1) %}
 {% set identifier = exercise.identifier %}
 {% set path = (exercise.lesson.path if exercise.lesson else exercise.detour.lesson.path) %}
+{% set file =  baseUrl + "/" + path + "/exercise-" + identifier + ".md" %}
 {% if is_panel %}<panel tags="git-mastery" class="non-printable" type="danger" {{ status }}
 header="{{ icon_exercise }} EXERCISE: `{{ identifier }}`"
-popup-url="{{ baseUrl }}/{{ path }}/exercise-{{ identifier }}.html">{% endif %}
+popup-url="{{ file | replace(".md", ".html") }}">{% else %}
+# Exercise `{{ identifier }}`
+{% endif %}
 {% if has_download %}
 **To download** the exercise:
 
@@ -485,13 +501,14 @@ popup-url="{{ baseUrl }}/{{ path }}/exercise-{{ identifier }}.html">{% endif %}
 **#r#No download##** required for this exercise.
 {% endif %}
 ---{.dashed .border-danger}
-{% if scenario %}
+{% if has_scenario %}
 
-**Scenario:** {{ scenario }}
+**Scenario:**
+<include src="{{ file }}#scenario" />
 {% endif %}
 **Your task:**{.text-danger}
 <div class="indented-level1">
-<include src="{{ baseUrl }}/{{ path }}/exercise-{{ identifier }}.md#task" />
+<include src="{{ file }}#task" />
 
 </div>
 
