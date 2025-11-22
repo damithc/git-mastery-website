@@ -159,6 +159,10 @@ mark {
     padding-left: 40px;
 }
 
+.indented-level3 {
+    padding-left: 60px;
+}
+
 .indented-less {
     padding-left: 10px;
 }

@@ -1,7 +1,7 @@
 <frontmatter>
-title: "Git Lessons"
+title: "Git-Mastery: Lessons"
 layout: lessons.md
-pageNav: 0
+pageNav: 5
 </frontmatter>
 
 <include src="container-inPage-asFlat.md" boilerplate />

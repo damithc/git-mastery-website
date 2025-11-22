@@ -1,5 +1,5 @@
 <frontmatter>
-title: "About: Acknowledgements"
+title: "About"
 pageNav: 3
 </frontmatter>
 
@@ -8,11 +8,12 @@ pageNav: 3
 <div class="website-content">
 <div id="body">
 
-**This book is [SE-EDU](https://se-education.org) sub project.**
+# About Git-Mastery
+
 
 ## License
 
-* This book is free and open-source, and is available under the MIT licence.
+* This project is free and open-source, and is available under the MIT licence.
 
 
 ## Bug reports, suggestions
@@ -22,7 +23,7 @@ pageNav: 3
 
 ## Contributions
 
-* PRs are welcome.
+* Code contributions are welcome. See [here](https://git-mastery.github.io/developers/) for more info.
 
 
 ## Contact us
@@ -30,13 +31,11 @@ pageNav: 3
 * You can contact us as `seer[at]comp.nus.edu.sg`.
 
 
-## Acknowledgements
-
-...
-
 ## Team
 
-...
+* **Project Mentor:** [Damith C. Rajapakse](https://damithc.github.io)
+* **Project Lead:** [Woo Jiahao](https://github.com/woojiahao)
+
 
 </div>
 </div>

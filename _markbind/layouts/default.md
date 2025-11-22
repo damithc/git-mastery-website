@@ -7,15 +7,9 @@
 </header>
 
 <div id="flex-body">
-<nav id="site-nav" class="fixed-header-padding">
-<div class="nav-component slim-scroll">
-
-</div>
-</nav>
 <div id="content-wrapper" class="fixed-header-padding">
 
-# <span class="text-dark"><small>****Git-Mastery: Lessons****</small></span>
-  {{ content }}
+{{ content }}
 </div>
 <nav id="page-nav" class="fixed-header-padding">
   <div class="nav-component slim-scroll">

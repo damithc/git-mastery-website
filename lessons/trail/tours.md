@@ -1,3 +1,7 @@
+<frontmatter>
+title: "Lessons: All in one page"
+</frontmatter>
+
 {% from "common/macros.njk" import trail with context %}
 
 <span id="title">&nbsp;</span>

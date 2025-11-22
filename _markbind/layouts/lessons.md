@@ -20,6 +20,7 @@
   * <small>[{{ lesson.title}}]({{baseUrl}}/{{ lesson.path }}/)</small>
   {% endfor %}
 {% endfor %}
+* <small>[**All lessons in one page**]({{baseUrl}}/lessons/trail/tours.md)</small>
 </site-nav>
 </div>
 </nav>

@@ -19,6 +19,9 @@
 {% macro sub_numbers(p) %}{{ '{' }} texts="['{{ p }}.1)','{{ p }}.2)','{{ p }}.3)','{{ p }}.4)']" {{ '}' }}{% endmacro %}
 <!-- ============================================================ -->
 
+{% macro thumbnail(icon, size=50) %}<thumbnail circle text="{{ icon }}" background="#198754" font-color="white" size="{{ size }}" />{% endmacro %}
+<!-- ============================================================ -->
+
 {% macro show_output(indent_level='') %}
 {% if indent_level %}<div class="indented-level{{ indent_level }}">{% endif %}
 <div class="d-flex">
