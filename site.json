@@ -10,9 +10,6 @@
     },
     {
       "glob": "**/exercise-*.md"
-    },
-    {
-      "glob": "**/tours.md"
     }
   ],
   "pagesExclude": ["**/*-fragment.md"],
