@@ -20,7 +20,7 @@ A free resource **for students and teachers**.<br>
 </header>
 
 
-{% macro heading(icon, text) %}<h4>{{ thumbnail(icon) }} <span class="lead font-weight-bold text-green">{{ text }}</span></h4>{% endmacro %}
+{% macro heading(icon, text) %}<h4 class="text-success">{{ thumbnail(icon) }} <span class="lead font-weight-bold text-green"><strong>{{ text }}</strong></span></h4>{% endmacro %}
 
 
 {{ heading(":fas-route:", "Outcome-driven lesson paths") }}
@@ -57,5 +57,26 @@ Git-Mastery is entirely free. There is no account signup. There is no limits on 
 Students can use it on their own, or as directed by their instructors.<br>
 Instructors can use it for their classes. No limits on class count/size.
 </div>
+<p/>
+<box type="success" no-icon no-background>
+
+### :fas-graduation-cap: If you are a student ...{.text-success}
+
+****If you are new to Git****, we recommend that you start go to the [lessons section](lessons/) and start following the lessons in the given sequence. Relevant tools and features will be introduced to you are the appropriate points of the lesson path.
+
+****If you have some familiarity with Git**** but wish to improve, you can still skim through the [lessons](lessons/) in the given sequence. Relevant tools and features will be introduced to you are the appropriate points of the lesson path. When you encounter hands-on practicals or exercises, you can do them to get better at Git.
+
+</box>
+<box type="success" no-icon no-background>
+
+### :fas-chalkboard-user: If you are an instructor ...{.text-success}
+
+****Option 1: Use the entire Git-Mastery site**** as part of your course.<br>
+****Option 2: Cherry-pick tours, lessons, or exercises to**** use in your course.
+
+In both cases, you can set up a dashboard to monitor the progress of your students, if you wish.
+</box>
+
+
 
 </div>
