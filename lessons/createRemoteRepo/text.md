@@ -1,4 +1,4 @@
-{% from "common/macros.njk" import trail, bold_number, button_green, callout, exercises, hp_number, label, show_git_term, show_git_term_tip, show_detour, show_exercise2, show_git_tabs, show_hands_on_practical, show_lesson_intro, show_output, show_under_the_hood with context %}
+{% from "common/macros.njk" import trail, bold_number, button_green, callout, exercises, hp_number, label, show_git_term, show_git_term_tip, show_detour, show_exercise, show_git_tabs, show_hands_on_practical, show_lesson_intro, show_output, show_under_the_hood with context %}
 
 <span id="prereqs"></span>
 
@@ -36,5 +36,5 @@ If you enable any of the three `Add _____` options shown above, GitHub will not 
 </div>
 
 <div id="extras">
-{{ show_exercise2(exercises.remote_control, has_verify=0) }}
+{{ show_exercise(exercises.remote_control, has_verify=0) }}
 </div>
