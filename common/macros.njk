@@ -175,9 +175,9 @@
 
 {% macro show_git_term_tip(id, current_page) -%}
 <popover id="pop:{{ current_page }}-{{ definition_id }}" placement="top" >
-  <span slot="header" class="text-info"><md>Definition: **<include src="{{ baseUrl }}/lessons/trail/terms-fragment.md#{{ id }}-term" inline trim/>**</md></span>
+  <span slot="header" class="text-info"><md>Definition: **<include src="{{ baseUrl }}/lessons/common/terms-fragment.md#{{ id }}-term" inline trim/>**</md></span>
   <div slot="content">
-    <include src="{{ baseUrl }}/lessons/trail/terms-fragment.md#{{ id }}-definition" inline trim/>
+    <include src="{{ baseUrl }}/lessons/common/terms-fragment.md#{{ id }}-definition" inline trim/>
   </div>
 </popover>
 

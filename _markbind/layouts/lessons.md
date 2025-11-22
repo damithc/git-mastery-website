@@ -12,12 +12,12 @@
 <site-nav>
 {% from "common/macros.njk" import trail with context %}
 
-* [**Lessons Home**]({{baseUrl}}/lessons/index.html)
+* [**Lessons Home**]({{baseUrl}}/lessons/)
 {% for tour_id, tour in trail %}
-* {{ tour.title }}
-  * [Tour Home]({{baseUrl}}/lessons/trail/{{ tour.folder }}/index.md)
+* <small>{{ tour.title }}</small>
+  * <small>[Tour Home]({{baseUrl}}/lessons/trail/{{ tour.folder }}/)</small>
   {% for lesson_id, lesson in tour.lessons %}
-  * [{{ lesson.title}}]({{baseUrl}}/{{ lesson.path }}/index.html)
+  * <small>[{{ lesson.title}}]({{baseUrl}}/{{ lesson.path }}/)</small>
   {% endfor %}
 {% endfor %}
 </site-nav>
