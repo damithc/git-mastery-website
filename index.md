@@ -26,41 +26,41 @@ A free resource **for students and teachers**.<br>
 {{ heading(":fas-route:", "Outcome-driven lesson paths") }}
 <div class="indented-level3">
 
-Our Git lessons are divided into [tours](lessons/), each teaching a specific usage of Git. So, instead of simply learning different Git commands, you learn how to use Git to achieve specific outcomes %%e.g., how to keep track of the history of a folder, while keeping a back of it on the cloud.%%
+Our Git lessons are divided into [tours](lessons/), each **teaching a specific usage of Git, not simply learning different Git commands** %%e.g., how to keep track of the history of a folder, while keeping a back of it on the cloud.%%
 </div>
 
 {{ heading(":fas-dumbbell:", "Authentic exercises to practice Git") }}
 <div class="indented-level3">
 
-We provide a hands-on practicals to practice Git concepts as you learn them, and exercises that simulate authentic Git usage to test your knowledge. Our companion app can set up elaborate Git usage scenarios so that you can go straight to practicing the concept at hand, without needing the setup the scaffolding yourself.
+We provide a hands-on practicals to practice Git concepts as you learn them, and **exercises that reflect authentic Git usage** to test your knowledge. You do the exercise **in your own computer**, using your own choice of Git tools. Our companion app **sets up specific Git usage scenarios in a scaffolded sandbox** so that you can go straight to practicing the concept at hand, without needing the setup the scaffolding yourself.
 </div>
 
 
 {{ heading(":fas-spell-check:", "Automated feedback") }}
 <div class="indented-level3">
 
-Students will not need to wonder if they did the exercise correctly, or where they went wrong. The Git-Mastery companion app can give students feedback on the Git exercises they do, and verify that the result is correct.
+Students will not need to wonder if they did the exercise correctly, or where they went wrong. The Git-Mastery companion **app gives feedback on the Git exercises, and verifies that the solution is correct**.
 </div>
 
 {{ heading(":fas-list-check:", "Progress tracking/monitoring") }}
 <div class="indented-level3">
 
-Our companion app keeps track of the student's progress through the exercises. The student can even make their progress visible online.<br>
-Instructors can keep track of their students' progress using a dashboard.
+Our companion app **keeps track of the student's progress** through the exercises. The student can even make their progress visible online.<br>
+**Instructors can keep track of their students' progress** using a dashboard.
 </div>
 
 
 {{ heading(":fas-hand-holding-heart:", "Free forever. No limits.") }}
 <div class="indented-level3">
 
-Git-Mastery is entirely free. There is no account signup. There is no limits on usage.<br>
+Git-Mastery is entirely free. There is **no account signup**. There is **no limits on usage**.<br>
 Students can use it on their own, or as directed by their instructors.<br>
 Instructors can use it for their classes. No limits on class count/size.
 </div>
 <p/>
 <box type="success" no-icon no-background>
 
-### :fas-graduation-cap: If you are a student ...{.text-success}
+#### :fas-graduation-cap: If you are a student ...{.text-success}
 
 ****If you are new to Git****, we recommend that you start go to the [lessons section](lessons/) and start following the lessons in the given sequence. Relevant tools and features will be introduced to you are the appropriate points of the lesson path.
 
@@ -69,7 +69,7 @@ Instructors can use it for their classes. No limits on class count/size.
 </box>
 <box type="success" no-icon no-background>
 
-### :fas-chalkboard-user: If you are an instructor ...{.text-success}
+#### :fas-chalkboard-user: If you are an instructor ...{.text-success}
 
 ****Option 1: Use the entire Git-Mastery site**** as part of your course.<br>
 ****Option 2: Cherry-pick tours, lessons, or exercises to**** use in your course.
