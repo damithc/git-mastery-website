@@ -36,9 +36,7 @@
       "src": "index.md",
       "title": "Git-Mastery: Home",
       "headings": {
-        "git-mastery": "Git-Mastery",
-        "if-you-are-a-student": " If you are a student ...",
-        "if-you-are-an-instructor": " If you are an instructor ..."
+        "git-mastery": "Git-Mastery"
       },
       "headingKeywords": {}
     },
