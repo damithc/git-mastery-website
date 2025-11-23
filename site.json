@@ -10,6 +10,9 @@
     },
     {
       "glob": "**/exercise-*.md"
+    },
+    {
+      "glob": "lessons/trail/all.md"
     }
   ],
   "pagesExclude": ["**/*-fragment.md"],
