@@ -487,6 +487,14 @@
         "exercise-staging-intervention": "Exercise staging-intervention"
       },
       "headingKeywords": {}
+    },
+    {
+      "src": "lessons/trail/all.md",
+      "title": "Lessons: All in one page",
+      "headings": {
+        "revision-control-using-git-and-amp-github": "Revision Control (Using Git &amp; GitHub)"
+      },
+      "headingKeywords": {}
     }
   ]
 }
