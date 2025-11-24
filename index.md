@@ -21,6 +21,16 @@ A free resource **for students and teachers**.<br>
 
 
 {% macro heading(icon, text) %}<h4 class="text-success">{{ thumbnail(icon) }} <span class="lead font-weight-bold text-green"><strong>{{ text }}</strong></span></h4>{% endmacro %}
+<div class="position-relative" style="padding-left:30px;">
+  <span style="
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:53px;
+    width:4px;
+    background-color: #198754;">
+  </span>
 
 
 {{ heading(":fas-route:", "Outcome-driven lesson paths") }}
@@ -57,26 +67,38 @@ Git-Mastery is entirely free. There is **no account signup**. There is **no limi
 Students can use it on their own, or as directed by their instructors.<br>
 Instructors can use it for their classes. No limits on class count/size.
 </div>
+</div>
+
 <p/>
+<div class="indented-level1">
+
 <box type="success" no-icon no-background>
 
 #### :fas-graduation-cap: If you are a student ...{.text-success}
 
-****If you are new to Git****, we recommend that you start go to the [lessons section](lessons/) and start following the lessons in the given sequence. Relevant tools and features will be introduced to you are the appropriate points of the lesson path.
+<div class="indented-level2">
 
-****If you have some familiarity with Git**** but wish to improve, you can still skim through the [lessons](lessons/) in the given sequence. Relevant tools and features will be introduced to you are the appropriate points of the lesson path. When you encounter hands-on practicals or exercises, you can do them to get better at Git.
+****If you are new to Git****, we recommend that you follow the [lessons section](lessons/) in the given sequence.
+
+****If you have some familiarity with Git**** but wish to improve, you can still skim through the [lessons](lessons/) in the given sequence, and do the exercises as you encounter them.
+
+In both cases, relevant tools and features will be introduced along the way.
+</div>
 
 </box>
 <box type="success" no-icon no-background>
 
 #### :fas-chalkboard-user: If you are an instructor ...{.text-success}
 
-****Option 1: Use the entire Git-Mastery site**** as part of your course.<br>
-****Option 2: Cherry-pick tours, lessons, or exercises to**** use in your course.
+<div class="indented-level2">
 
-In both cases, you can set up a dashboard to monitor the progress of your students, if you wish.
+****Option 1: Use the entire Git-Mastery site**** as part of your course.<br>
+****Option 2: Select specific tours, lessons, or exercises**** to use in your course.
+
+In both cases, you can set up a dashboard to monitor the progress of your students.
+</div>
 </box>
 
-
+</div>
 
 </div>

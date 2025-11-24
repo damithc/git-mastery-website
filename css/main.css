@@ -155,6 +155,10 @@ mark {
     text-align:justify
 }
 
+.indented-level1 {
+    padding-left: 20px;
+}
+
 .indented-level2 {
     padding-left: 40px;
 }
